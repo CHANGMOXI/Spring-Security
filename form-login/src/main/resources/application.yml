@@ -1,0 +1,5 @@
+spring:
+  security:
+    user:
+      name: changmoxi
+      password: 123456
