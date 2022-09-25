@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/form-login/pom.xml" />
         <option value="$PROJECT_DIR$/jwt-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/form-login-4/pom.xml" />
       </list>
     </option>
   </component>
