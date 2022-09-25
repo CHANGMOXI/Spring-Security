@@ -6,14 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="form-login-4" />
         <module name="form-login" />
         <module name="jwt-demo" />
-        <module name="form-login-4" />
+        <module name="form-login-5" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="form-login" target="1.8" />
       <module name="form-login-4" target="1.8" />
+      <module name="form-login-5" target="1.8" />
       <module name="jwt-demo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -21,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="form-login" options="-parameters" />
       <module name="form-login-4" options="-parameters" />
+      <module name="form-login-5" options="-parameters" />
       <module name="jwt-demo" options="-parameters" />
     </option>
   </component>

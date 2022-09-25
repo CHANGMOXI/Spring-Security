@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/form-login/form-login.iml" filepath="$PROJECT_DIR$/form-login/form-login.iml" />
       <module fileurl="file://$PROJECT_DIR$/form-login-4/form-login-4.iml" filepath="$PROJECT_DIR$/form-login-4/form-login-4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/form-login-5/form-login-5.iml" filepath="$PROJECT_DIR$/form-login-5/form-login-5.iml" />
       <module fileurl="file://$PROJECT_DIR$/jwt-demo/jwt-demo.iml" filepath="$PROJECT_DIR$/jwt-demo/jwt-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springsecurity.iml" filepath="$PROJECT_DIR$/.idea/springsecurity.iml" />
     </modules>
