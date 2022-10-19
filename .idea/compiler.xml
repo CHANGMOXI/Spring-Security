@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="form-login-4" />
+        <module name="custom-verifycode-authentication" />
         <module name="form-login" />
         <module name="jwt-demo" />
         <module name="form-login-5" />
@@ -15,6 +16,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="custom-verifycode-authentication" target="1.8" />
       <module name="form-login" target="1.8" />
       <module name="form-login-4" target="1.8" />
       <module name="form-login-5" target="1.8" />
@@ -24,6 +26,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="custom-verifycode-authentication" options="-parameters" />
       <module name="form-login" options="-parameters" />
       <module name="form-login-4" options="-parameters" />
       <module name="form-login-5" options="-parameters" />

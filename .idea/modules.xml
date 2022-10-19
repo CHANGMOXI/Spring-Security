@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/custom-verifycode-authentication/custom-verifycode-authentication.iml" filepath="$PROJECT_DIR$/custom-verifycode-authentication/custom-verifycode-authentication.iml" />
       <module fileurl="file://$PROJECT_DIR$/form-login/form-login.iml" filepath="$PROJECT_DIR$/form-login/form-login.iml" />
       <module fileurl="file://$PROJECT_DIR$/form-login-4/form-login-4.iml" filepath="$PROJECT_DIR$/form-login-4/form-login-4.iml" />
       <module fileurl="file://$PROJECT_DIR$/form-login-5/form-login-5.iml" filepath="$PROJECT_DIR$/form-login-5/form-login-5.iml" />
