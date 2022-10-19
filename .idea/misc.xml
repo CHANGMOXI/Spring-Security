@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/form-login-4/pom.xml" />
         <option value="$PROJECT_DIR$/form-login-5/pom.xml" />
         <option value="$PROJECT_DIR$/security-datajpa/pom.xml" />
+        <option value="$PROJECT_DIR$/rememberme/pom.xml" />
+        <option value="$PROJECT_DIR$/rememberme-persis/pom.xml" />
         <option value="$PROJECT_DIR$/custom-verifycode-authentication/pom.xml" />
       </list>
     </option>

@@ -13,6 +13,10 @@
         <module name="jwt-demo" />
         <module name="form-login-5" />
         <module name="security-datajpa" />
+        <module name="rememberme-persis" />
+        <module name="rememberme" />
+        <module name="form-login" />
+        <module name="form-login-5" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +25,8 @@
       <module name="form-login-4" target="1.8" />
       <module name="form-login-5" target="1.8" />
       <module name="jwt-demo" target="1.8" />
+      <module name="rememberme" target="1.8" />
+      <module name="rememberme-persis" target="1.8" />
       <module name="security-datajpa" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -31,6 +37,8 @@
       <module name="form-login-4" options="-parameters" />
       <module name="form-login-5" options="-parameters" />
       <module name="jwt-demo" options="-parameters" />
+      <module name="rememberme" options="-parameters" />
+      <module name="rememberme-persis" options="-parameters" />
       <module name="security-datajpa" options="-parameters" />
     </option>
   </component>
