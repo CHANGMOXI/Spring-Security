@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/form-login-4/form-login-4.iml" filepath="$PROJECT_DIR$/form-login-4/form-login-4.iml" />
       <module fileurl="file://$PROJECT_DIR$/form-login-5/form-login-5.iml" filepath="$PROJECT_DIR$/form-login-5/form-login-5.iml" />
       <module fileurl="file://$PROJECT_DIR$/jwt-demo/jwt-demo.iml" filepath="$PROJECT_DIR$/jwt-demo/jwt-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rememberme/rememberme.iml" filepath="$PROJECT_DIR$/rememberme/rememberme.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rememberme-persis/rememberme-persis.iml" filepath="$PROJECT_DIR$/rememberme-persis/rememberme-persis.iml" />
       <module fileurl="file://$PROJECT_DIR$/security-datajpa/security-datajpa.iml" filepath="$PROJECT_DIR$/security-datajpa/security-datajpa.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springsecurity.iml" filepath="$PROJECT_DIR$/.idea/springsecurity.iml" />
     </modules>
