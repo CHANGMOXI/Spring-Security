@@ -22,6 +22,10 @@ import java.util.Arrays;
 import java.util.Properties;
 
 /**
+ * 自定义认证逻辑(验证码)
+ * 1.自定义 MyAuthenticationProvider(加入验证码校验)，让自定义 MyAuthenticationProvider 代替 DaoAuthenticationProvider
+ * 2.自己提供 ProviderManager，并注入自定义的 MyAuthenticationProvider
+ *
  * @author chenzhisheng
  * @date 2022/10/19 17:55
  **/
@@ -32,6 +36,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return NoOpPasswordEncoder.getInstance();
     }
 
+    /**
+     * 提供一个描述验证码基本信息的实体类Bean
+     *
+     * @return
+     */
     @Bean
     Producer verifyCode() {
         Properties properties = new Properties();
