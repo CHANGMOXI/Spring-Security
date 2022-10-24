@@ -22,9 +22,12 @@ import java.util.Arrays;
 import java.util.Properties;
 
 /**
- * 自定义认证逻辑(验证码)
- * 1.自定义 MyAuthenticationProvider(加入验证码校验)，让自定义 MyAuthenticationProvider 代替 DaoAuthenticationProvider
- * 2.自己提供 ProviderManager，并注入自定义的 MyAuthenticationProvider
+ * 之前自定义过滤器加入验证码校验，并加入到 Spring Security 过滤器链
+ * 这种方式的弊端: 破坏了原有过滤器链，每次请求都要走一遍验证码过滤器，实际上只需要登录请求经过该过滤器，其他请求不需要
+ * <p>
+ * 自定义认证逻辑(验证码) 高级玩法一:
+ * 1.自定义 MyAuthenticationProvider(加入验证码校验)，代替 DaoAuthenticationProvider，重写additionalAuthenticationChecks方法 {@link MyAuthenticationProvider}
+ * 2.自己提供 ProviderManager，并注入自定义的 MyAuthenticationProvider {@link SecurityConfig#authenticationManager()}
  *
  * @author chenzhisheng
  * @date 2022/10/19 17:55
@@ -54,6 +57,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return defaultKaptcha;
     }
 
+    /**
+     * UserDetailsService实例，这里方便起见将用户直接存在内存
+     *
+     * @return
+     */
     @Bean
     @Override
     protected UserDetailsService userDetailsService() {
@@ -62,6 +70,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return manager;
     }
 
+    /**
+     * 提供一个 MyAuthenticationProvider 的实例，创建该实例时，需要提供 UserDetailService 和 PasswordEncoder 实例
+     *
+     * @return
+     */
     @Bean
     MyAuthenticationProvider myAuthenticationProvider() {
         MyAuthenticationProvider myAuthenticationProvider = new MyAuthenticationProvider();
@@ -70,6 +83,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return myAuthenticationProvider;
     }
 
+    /**
+     * 自己提供 ProviderManager，并注入自定义的 MyAuthenticationProvider
+     *
+     * @return
+     * @throws Exception
+     */
     @Bean
     @Override
     protected AuthenticationManager authenticationManager() throws Exception {
@@ -80,6 +99,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
+                //验证码接口 任何人都能访问
                 .antMatchers("/vc.jpg").permitAll()
                 .anyRequest().authenticated()
                 .and()
