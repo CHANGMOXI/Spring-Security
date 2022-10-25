@@ -10,6 +10,7 @@
         <module name="custom-verifycode-authentication-2" />
         <module name="form-login-4" />
         <module name="custom-verifycode-authentication" />
+        <module name="session2" />
         <module name="jwt-demo" />
         <module name="session1" />
         <module name="security-datajpa" />
@@ -30,6 +31,7 @@
       <module name="rememberme-persis" target="1.8" />
       <module name="security-datajpa" target="1.8" />
       <module name="session1" target="1.8" />
+      <module name="session2" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -44,6 +46,7 @@
       <module name="rememberme-persis" options="-parameters" />
       <module name="security-datajpa" options="-parameters" />
       <module name="session1" options="-parameters" />
+      <module name="session2" options="-parameters" />
     </option>
   </component>
 </project>
