@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="custom-verifycode-authentication-2" />
+        <module name="stricthttpfirewall" />
         <module name="form-login-4" />
         <module name="custom-verifycode-authentication" />
         <module name="session2" />
@@ -32,6 +33,7 @@
       <module name="security-datajpa" target="1.8" />
       <module name="session1" target="1.8" />
       <module name="session2" target="1.8" />
+      <module name="stricthttpfirewall" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -47,6 +49,7 @@
       <module name="security-datajpa" options="-parameters" />
       <module name="session1" options="-parameters" />
       <module name="session2" options="-parameters" />
+      <module name="stricthttpfirewall" options="-parameters" />
     </option>
   </component>
 </project>

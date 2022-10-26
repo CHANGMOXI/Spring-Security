@@ -12,5 +12,6 @@
     <file url="file://$PROJECT_DIR$/security-datajpa/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/session1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/session2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stricthttpfirewall/src/main/java" charset="UTF-8" />
   </component>
 </project>
