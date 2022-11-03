@@ -7,18 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="custom-verifycode-authentication-2" />
         <module name="stricthttpfirewall" />
+        <module name="custom-verifycode-authentication-2" />
         <module name="form-login-4" />
-        <module name="custom-verifycode-authentication" />
         <module name="session2" />
-        <module name="jwt-demo" />
         <module name="session1" />
         <module name="security-datajpa" />
         <module name="rememberme-persis" />
-        <module name="rememberme" />
+        <module name="session-sharing" />
         <module name="form-login" />
         <module name="form-login-5" />
+        <module name="custom-verifycode-authentication" />
+        <module name="jwt-demo" />
+        <module name="rememberme" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -31,6 +32,7 @@
       <module name="rememberme" target="1.8" />
       <module name="rememberme-persis" target="1.8" />
       <module name="security-datajpa" target="1.8" />
+      <module name="session-sharing" target="1.8" />
       <module name="session1" target="1.8" />
       <module name="session2" target="1.8" />
       <module name="stricthttpfirewall" target="1.8" />
@@ -47,6 +49,7 @@
       <module name="rememberme" options="-parameters" />
       <module name="rememberme-persis" options="-parameters" />
       <module name="security-datajpa" options="-parameters" />
+      <module name="session-sharing" options="-parameters" />
       <module name="session1" options="-parameters" />
       <module name="session2" options="-parameters" />
       <module name="stricthttpfirewall" options="-parameters" />
